@@ -51,14 +51,14 @@ Reformular(Frase) <= EsRedundante(Frase)
 # Generar el resumen final con frases clave
 ResumenFinal(Frase) <= Mantener(Frase)
 
-# Función para imprimir sin líneas en blanco adicionales
+
 def imprimir_lista(titulo, consulta):
     resultados = list(consulta)
     if resultados:
         print(f"\n{titulo}:")
         print("-" * 40)
         for f in resultados:
-            print(f[0].strip())  # Asegura que no haya espacios adicionales
+            print(f[0].strip())  
 
 # Consultas con impresión limpia
 imprimir_lista("Frases eliminadas (las que NO están en Mantener)", Eliminar(Frase))
