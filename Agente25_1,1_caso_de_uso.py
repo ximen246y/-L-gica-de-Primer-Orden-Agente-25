@@ -1,7 +1,7 @@
 from pyDatalog import pyDatalog
 import re
 
-# Limpiar reglas previas
+
 pyDatalog.clear()
 
 # Definir términos y predicados
@@ -60,7 +60,7 @@ def imprimir_lista(titulo, consulta):
         for f in resultados:
             print(f[0].strip())  
 
-# Consultas con impresión limpia
+# Consultas 
 imprimir_lista("Frases eliminadas (las que NO están en Mantener)", Eliminar(Frase))
 imprimir_lista("Fusión de frases similares", Fusionar(Frase))
 imprimir_lista("Reformulación de frases redundantes", Reformular(Frase))
