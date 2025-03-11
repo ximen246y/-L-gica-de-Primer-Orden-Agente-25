@@ -16,7 +16,7 @@ Una frase redundante que no aporta mucho. Otra frase redundante que es innecesar
 """
 
 # Dividir el texto en frases
-frases = re.split(r'\. ', texto.strip())  # Divide por punto y espacio
+frases = re.split(r'\. ', texto.strip())  
 
 # Definir las frases como hechos
 for f in frases:
