@@ -1,6 +1,6 @@
 from pyDatalog import pyDatalog
 
-# Limpiar reglas previas
+
 pyDatalog.clear()
 
 # Definir términos y predicados
